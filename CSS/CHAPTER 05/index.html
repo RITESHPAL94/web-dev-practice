@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Casacade</title>
+    <style>
+        /* The Specificity of this Selector is 1  */
+        h1 {
+            color: aqua;
+        }
+        /* The Specificity of this Selector is 10  */
+        .yellow {
+            color: yellow;
+        }
+        /* The Specificity of this Selector is 10  */
+        .cred {
+            color: red;
+        /* The Specificity of this Selector is 10  */
+        }
+        /* The Specificity of this Selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+        /* The Specificity of this Selector is 10  and it is an example of attribute selector. */
+        [data-x=a]{
+            background-color: red; /*  Attribute selector */
+        }
+        /* The Specificity of this Selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.riteshclass.raj-class[href]:hover{
+            color:maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
+
+
+<!-- Order of Specificity: 
+    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
