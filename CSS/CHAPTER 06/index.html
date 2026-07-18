@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1525px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1525px; */
+            width: 80vw;
+            margin: 23px auto;
+            /* height: 80vh; */
+            min-height: 80vh;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container div{
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: black;
+            font-size: 22px;
+            width: 80vw;
+        }
+        .container > div div{
+            border: 2px solid blue;
+            width: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>This is a Box.</h1>
+    </div>
+    
+    <div class="container">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque fuga, commodi amet libero, quia velit perspiciatis odio eaque impedit odit repellat optio quas temporibus tempora natus! Dicta quisquam dignissimos odit nobis. Eos maxime repellendus exercitationem, mollitia explicabo sit, quas voluptates optio rem ducimus quae, porro qui at. Laudantium et totam fuga quis officiis neque ipsum delectus.
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore reiciendis, possimus illum, vitae minus praesentium harum quia enim itaque soluta iusto magni.
+        </div>
+    </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet quam alias tempora, laboriosam necessitatibus inventore tempore ex autem. Quis harum expedita amet aliquid iure ea incidunt maiores! Tempore consectetur est aliquam alias eligendi ex ipsa possimus recusandae sapiente natus, earum itaque laborum voluptate praesentium saepe error quasi, quisquam culpa.
+    </div>
+    <div class="mycont">
+        I am another container.
+    </div>
+</body>
+
+</html>
+
+<!-- vmin in phones used for width and for laptop, computer it is height.
+Vice versa for vmax. -->
