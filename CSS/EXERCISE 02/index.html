@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 02</title>
+    <style>
+        .card {
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        /* body {
+            display: flex;
+            justify-content: center;
+        } */
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .box2 {
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            color: blue;
+        }
+
+        .tag-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 8px 0;
+        }
+
+        .tag {
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        span p a {
+            color: red;
+            font-style: initial;
+            text-decoration: underline;
+        }
+
+        span p {
+            margin: 2px;
+            padding: 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .content{
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            padding:4px 12px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tags">
+        <div class="card">
+            <img src="https://media.bolavip.com/wp-content/uploads/sites/10/2026/07/02133013/Cristiano-Ronaldo-1200x740.webp"
+                alt="Cristiano Ronaldo">
+        </div>
+        <div class="box2">
+            Cristiano Ronaldo
+        </div>
+        <div class="tag-container">
+            <span class="tag">RED DEVIL</span>
+            <span class="tag">MR. CHAMPION LEAGUE</span>
+        </div>
+        <span class="class">
+            Cristiano Ronaldo dos Santos Aveiro
+        </span>
+        <span>
+            <p> born 5 February 1985, nicknamed CR7, is a Portuguese professional footballer who plays as a forward for
+                and
+                captains the Saudi Pro League club Al-Nassr and the <a
+                    href="https://en.wikipedia.org/wiki/Portugal_national_football_team">Portugal national team</a>.
+                Widely regarded as one of the greatest players in history, he has won numerous individual accolades
+                throughout his career, including five Ballon d'Or awards, a record three UEFA Men's Player of the Year
+                Awards, and four European Golden Shoes. He was named the world's best player five times by FIFA.</p>
+        </span>
+
+        <div class="content">
+            <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">Read More</a>
+        </div>
+    </div>
+</body>
+
+</html>
