@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navbar</title>
+
+    <style>
+        body {
+            color: #111;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+
+            width: calc(100% - 56px);
+            height: 94px;
+            margin: 0 28px;
+            padding: 0 30px;
+
+            background-color: whitesmoke;
+            border: 1px solid #d1d1d1;
+            border-radius: 4px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            min-width: 300px;
+        }
+
+        .headline {
+            font-weight: 700;
+            font-size: 27px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .show {
+            font-size: 9px;
+            margin-top: 2px;
+            margin-left: 12px;
+            color: #444;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 34px;
+            flex: 1;
+        }
+
+        .center a {
+            text-decoration: none;
+            color: #111;
+
+            display: flex;
+            align-items: center;
+
+            white-space: nowrap;
+        }
+
+        .center a:hover {
+            color: #555;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 30px;
+            min-width: 320px;
+        }
+
+        .right a {
+            background: #ffd33d;
+            color: #111;
+
+            text-decoration: none;
+
+            padding: 13px 29px;
+            border-radius: 6px;
+
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 17px;
+        }
+
+        .globe {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="left">
+
+            <div class="logo">
+
+                <img src="https://imgs.search.brave.com/24hw8GPYsh61PYZy2Z5te5qBUP0bTo4g4lMfQiSUS3c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudHZtYXplLmNv/bS91cGxvYWRzL2lt/YWdlcy9tZWRpdW1f/cG9ydHJhaXQvMC8x/MjM5LmpwZw"
+                    alt="Mentalist">
+
+            </div>
+
+            <div class="headline">Mentalist
+                <div class="show">
+
+                    Television show
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="center">
+            <a href="https://en.wikipedia.org/wiki/List_of_The_Mentalist_characters">Characters</a>
+            <a href="https://www.netflix.com">netflix</a>
+            <a href="https://www.imdb.com/title/tt1196946/">IMDb</a>
+            <a href="https://en.wikipedia.org/wiki/The_Mentalist">Wikipedia</a>
+        </div>
+
+        <div class="right">
+
+            <a href="https://www.netflix.com/in/title/70155590">
+                Watch
+            </a>
+
+            <div class="language">
+                <span class="globe">🔍</span>
+                <span>English</span>
+
+
+    </nav>
+
+</body>
+
+</html>>
