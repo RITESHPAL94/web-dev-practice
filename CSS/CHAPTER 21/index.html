@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and position</title>
+    <style>
+        .container{
+            height: 634px;
+            width: 634px;
+            border: 2px solid black;
+            /* background-color: azure; */
+            background-image: url("https://th.bing.com/th/id/OIP.YgVEBi1DmpH15Ose-WkMrwHaEJ?w=303&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+            background-repeat: no-repeat;
+            
+        }
+        .container img{
+            width: 634px;
+            height: 634px;
+            object-fit: cover;
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            object-position: 10px 20px;
+            /* object-position: top right; */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://th.bing.com/th/id/OIP.RTs3CqfNOamaBGTYxHVxHQHaEK?w=279&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt=""> -->
+    </div>
+</body>
+</html>
