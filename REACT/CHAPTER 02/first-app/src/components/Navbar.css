@@ -1,0 +1,15 @@
+nav, ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    gap: 36px;
+}
+
+nav{
+    background-color: aquamarine;
+}
